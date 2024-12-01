@@ -91,15 +91,19 @@
                         <li class=" divider d-none"></li>
 
                         <li>
-                            <button class="nav-link navbar-toggler btn me-auto p-2">
+                            <button class="nav-link navbar-toggler btn me-auto p-2" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                                aria-controls="offcanvasNavbar" aria-expanded="false aria-label=" Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                         </li>
                     </ul>
-                    <div id="offcanvasNavbar" class="offcanvas offcanvas-end o_navbar_mobile">
+                    <div id="offcanvasNavbar" class="offcanvas offcanvas-end o_navbar_mobile"
+                        aria-labelledby="offcanvasNavbarLabel">
 
                         <div class="offcanvas-header justify-content-end o_not_editable">
-                            <button type="button" class="nav-link btn-close"></button>
+                            <button type="button" class="nav-link btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body d-flex flex-column justify-content-between h-100 w-100">
                             <ul class="navbar-nav">
